@@ -1,16 +1,56 @@
-# React + Vite
+# 🎮 GAMESPECS | Game System Requirements Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React web application designed for gamers to quickly check and find the minimum system requirements (RAM, GPU, Storage, and Release Year) for over 30 popular video games.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Preview & Screenshots
 
-## React Compiler
+![App Screenshot](preview.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend Library:** React.js
+- **Styling:** Vanilla CSS3
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally on your machine:
+
+1. Clone the Repository:
+   git clone https://github.com/Mamadinit1/Game-Requierment-Finder.git
+
+2. Navigate to the Project Directory:
+   cd 'Game Requirement Finder'
+
+3. Install Dependencies:
+   npm install
+
+4. Run the Development Server:
+   npm start
+
+---
+
+## 📂 Project Structure
+
+- public/
+- src/
+  - components/
+    - SearchSuggest.jsx
+  - Main/
+    - Games.jsx
+  - App.jsx
+  - App.css
+  - responsive.css
+  - index.js
+- README.md
+- package.json
+- preview.png
+
+---
+
+Made with 💜

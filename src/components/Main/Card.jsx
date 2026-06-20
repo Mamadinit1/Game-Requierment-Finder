@@ -4,7 +4,7 @@ function Card({ gameObj }) {
   let { id, title, minRam, minGpu, storage, releaseYear } = gameObj;
 
   return (
-    <div className="card" data-id={id}>
+    <div className="card" data-id={id} id={`card${id}`}>
       <div className="cardTop">
         <span className="gameTitle">{title}</span>
         <span className="gameYear">{releaseYear}</span>

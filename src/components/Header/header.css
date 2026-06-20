@@ -26,9 +26,12 @@ header {
   font-size: 1.2rem;
 }
 .headerBot {
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
 }
 .headerBot input {
-  width: 80%;
+  width: 100%;
   padding: 2rem 0;
   background-color: #45405a5b;
   color: #ff00d0;
@@ -46,4 +49,42 @@ header {
   border-color: #ff00d0;
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
   background-color: #242632;
+}
+.searchWrapper {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.2rem;
+  background-color: #1f2029;
+  border: 1px solid #374151;
+  position: absolute;
+  z-index: 1000;
+  overflow: hidden;
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.5),
+    0 0 15px rgba(168, 85, 247, 0.1);
+}
+
+.searchTitle {
+  text-decoration: none;
+  color: #e5e7eb;
+  padding: 1.5rem;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #2d2f3f;
+}
+.searchTitle:last-child {
+  border-bottom: none;
+}
+
+.searchTitle:hover {
+  background-color: #242632;
+  color: #a855f7;
+  padding-left: 1.8rem;
+}
+.hidden {
+  display: none;
 }

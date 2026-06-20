@@ -6,8 +6,8 @@
   margin: 5rem 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: flex-start;
+  gap: 3rem;
+  justify-content: center;
 }
 .card {
   width: 30rem;
@@ -16,6 +16,26 @@
   border-radius: 1rem;
   border: 1px solid #ff00d031;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card.active {
+  border-color: #00f2ff;
+  box-shadow: 0 0 10px 3px #00c8ffe4;
+  &.card .gameYear {
+    box-shadow: 0 0 4px 2px #00c8ffe4;
+    border-color: #00f2ff;
+    color: #00f2ff;
+    background-color: #00ffff31;
+  }
+  .cardBot {
+    border-color: #00f2ff;
+  }
+  &:hover {
+    box-shadow: 0 0 15px 5px #00c8ffe4;
+    border-color: #00f2ff;
+    &.card .gameYear {
+      border-color: #00f2ff;
+    }
+  }
 }
 .card:hover {
   transform: translateY(-5px);
