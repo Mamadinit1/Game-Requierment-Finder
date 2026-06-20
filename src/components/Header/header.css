@@ -5,7 +5,13 @@ header {
 }
 .headerTop {
 }
+.headerTop img {
+  max-height: 7.4rem;
+}
 .headerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 5.4rem;
   margin-bottom: 1rem;
 }

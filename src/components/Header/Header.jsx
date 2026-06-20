@@ -6,6 +6,7 @@ function Header() {
       <div className="container">
         <div className="headerTop">
           <h1 className="headerTitle">
+            <img src="/images/logo.png" alt="" />
             GAME<span>SYSTEM</span>
           </h1>
           <p>Search for system requirements of your favorite games</p>
