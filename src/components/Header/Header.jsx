@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "./header.css";
 
 function Header() {
+  const [searchValue, setSearchValue] = useState("");
   return (
     <header>
       <div className="container">
@@ -15,6 +17,8 @@ function Header() {
           <input
             type="text"
             placeholder="Type a game name... (e.g., Cyberpunk)"
+            value={searchValue}
+            onChange={() => setSearchValue(event.target.value)}
           />
         </div>
       </div>

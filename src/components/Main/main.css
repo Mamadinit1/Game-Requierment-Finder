@@ -10,6 +10,7 @@
   justify-content: flex-start;
 }
 .card {
+  width: 30rem;
   background: linear-gradient(145deg, #181922, #1f2029);
   padding: 3rem 2rem;
   border-radius: 1rem;
