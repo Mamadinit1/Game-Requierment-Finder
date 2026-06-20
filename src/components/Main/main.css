@@ -1,0 +1,70 @@
+.Games {
+  padding: 5rem 0;
+  color: #fff;
+  border-top: 1px solid #ff00d032;
+  border-bottom: 1px solid #ff00d032;
+  margin: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+.card {
+  background: linear-gradient(145deg, #181922, #1f2029);
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid #ff00d031;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #ff00d0;
+  box-shadow: 0 10px 25px -5px #ff00d081;
+  &.card .gameYear {
+    box-shadow: 0 0 4px 2px #ff00d052;
+    border-color: #ff00d0;
+  }
+}
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+.gameYear {
+  background-color: #ff00d031;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  color: #eb09c1;
+  font-size: 1.2rem;
+  font-family: "roboto medium";
+  border: 1px solid #ff00d054;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gameTitle {
+  font-size: 1.8rem;
+  font-family: "roboto medium";
+}
+.cardBot {
+  border-top: 1px solid #ff00d09b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-top: 3rem;
+}
+.gameInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.4rem;
+}
+.label {
+  font-family: "roboto medium";
+}
+.value {
+  font-family: "roboto light";
+}

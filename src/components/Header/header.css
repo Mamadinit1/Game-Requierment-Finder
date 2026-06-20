@@ -1,0 +1,43 @@
+header {
+  margin-top: 7rem;
+  color: #fff;
+  text-align: center;
+}
+.headerTop {
+}
+.headerTitle {
+  font-size: 5.4rem;
+  margin-bottom: 1rem;
+}
+.headerTitle span {
+  color: #ff00d0;
+  text-shadow: 0px 0px 7px #ff00d0;
+}
+.headerTop p {
+  margin-bottom: 5rem;
+  color: #818181;
+  font-family: "roboto light";
+  font-size: 1.2rem;
+}
+.headerBot {
+}
+.headerBot input {
+  width: 80%;
+  padding: 2rem 0;
+  background-color: #45405a5b;
+  color: #ff00d0;
+  border: 1px solid #ff00d058;
+  border-radius: 1.5rem;
+  outline: 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.headerBot input::placeholder {
+  color: #8f8e8f;
+  font-size: 1.4rem;
+}
+.headerBot input:focus {
+  border-color: #ff00d0;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+  background-color: #242632;
+}
