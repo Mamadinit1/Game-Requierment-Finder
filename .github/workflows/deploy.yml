@@ -1,0 +1,24 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]  # هر پوش روی main → تریگر میشه
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # یه ماشین مجازی لینوکس
+    
+    steps:
+      - uses: actions/checkout@v4  # کد رو می‌گیره
+      
+      - uses: actions/setup-node@v4  # Node.js نصب می‌کنه
+        with:
+          node-version: 18
+          
+      - run: npm ci  # وابستگی‌ها رو نصب می‌کنه (سریع‌تر از npm install)
+      - run: npm run build  # پروژه رو Build می‌کنه → dist می‌سازه
+      
+      - uses: peaceiris/actions-gh-pages@v3  # پوشه dist رو می‌بره gh-pages
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
